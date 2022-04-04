@@ -4,6 +4,7 @@
 # 解答例1
 s = "He likes paiza"
 # 文字列s をスペースで分割
-words = gets.split(" ")
+words = s.split(" ")
 # 配列 words の先頭から順に出力
-puts(words)
+for word in words:
+    print(word)
