@@ -1,25 +1,55 @@
 # 5 行の整数の入力 (paizaランク D 相当)
 # https://paiza.jp/works/mondai/stdin_primer/stdin_primer__integer_row_step3
 
-# 解答例1
-# 入力
-a1 = gets.to_i
-a2 = gets.to_i
-a3 = gets.to_i
-a4 = gets.to_i
-a5 = gets.to_i
-# 出力
-puts(a1)
-puts(a2)
-puts(a3)
-puts(a4)
-puts(a5)
+# 入出力例
+INPUT1 = <<~"EOS"
+  1
+  2
+  3
+  4
+  5
+EOS
+OUTPUT1 = <<~"EOS"
+  1
+  2
+  3
+  4
+  5
+EOS
 
-# 解答例2
+INPUT2 = <<~"EOS"
+  1111
+  3333
+  5555
+  7777
+  9999
+EOS
+OUTPUT2 = <<~"EOS"
+  1111
+  3333
+  5555
+  7777
+  9999
+EOS
+
+# 解答例1
+n = 5
 # 入力
-ary = gets.split.map(&:to_i)
+ary = n.times.map { gets.to_i }
 # 出力
 puts(ary)
+
+# 解答例2
+n = 5
+# 入力
+ary = []
+n.times do
+  ary.push(gets.to_i)
+end
+# 出力
+puts(ary)
+
+
 
 =begin
 5 行の整数の入力 (paizaランク D 相当)
