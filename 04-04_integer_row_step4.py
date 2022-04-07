@@ -6,4 +6,4 @@ n = 100
 # 入力
 ary = [int(input()) for _ in range(n)]
 # 出力
-print(ary)
+[print(num) for num in ary]
