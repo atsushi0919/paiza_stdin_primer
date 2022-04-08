@@ -18,71 +18,26 @@ OUTPUT1 = <<~"EOS"
   8 813
 EOS
 
-# 解答例
+# 解答例1
 # 1 行目入力
 n = gets.to_i
 # 続く n 行入力
-ary = n.times.map { gets.split.map(&:to_i) }
+pairs = n.times.map { gets.split.map(&:to_i) }
 # 出力
-ary.each { |pair| puts(pair.join(" ")) }
+pairs.each { |pair| puts(pair.join(" ")) }
 
-=begin
-N 組の整数の入力 (paizaランク D 相当)
-問題にチャレンジして、ユーザー同士で解答を教え合ったり、コードを公開してみよう！
-
-シェア用URL:
-https://paiza.jp/works/mondai/stdin_primer/stdin_primer__pair_data_step2
-問題文のURLをコピーする
- チャレンジする言語
-
-得意な言語を選択してください
-コードを書いて解いてみる
- チケット使用済
-問題
- 下記の問題をプログラミングしてみよう！
-1 行目に整数 N が与えられます。
-2 行目以降に、N 組の整数 a_i と b_i が N 行で与えられます。(1 ≦ i ≦ N)
-N 組の a_i と b_i を改行区切りで出力してください。
-
-入力される値
-以下の形式で標準入力によって与えられます。
-1 行目に 整数 N
-2 行目から (N + 1) 行目に N 組の整数 a_i, b_i が N 行で与えられます。
-
-
-N
-a_1 b_1
-...
-a_N b_N
-
-入力値最終行の末尾に改行が１つ入ります。
-文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
-期待する出力
-N 組の a_i と b_i を改行区切りで出力してください。
-また、末尾に改行を入れ、余計な文字、空行を含んではいけません。
-
-
-a_1 b_1
-...
-a_N b_N
-条件
-すべてのテストケースにおいて、以下の条件をみたします。
-
-・N は 1 以上 100 以下の整数
-・a_i, b_i は 1 以上 10,000 以下の整数 (1 ≦ i ≦ N)
-
-入力例1
-5
-813 813
-8 13
-81 1
-81 3
-8 813
-
-出力例1
-813 813
-8 13
-81 1
-81 3
-8 813
-=end
+# 解答例2
+# 1 行目入力
+n = gets.to_i
+# 続く n 行入力
+pairs = []
+n.times do
+  # 半角スペースで分割して整数型に変換する
+  pair = gets.split.map(&:to_i)
+  # pairs に pair を追加する
+  pairs.push(pair)
+end
+# 出力
+pairs.each do |pair|
+  puts(pair.join(" "))
+end
