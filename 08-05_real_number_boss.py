@@ -3,6 +3,6 @@
 
 # 解答例
 # 入力
-ary = map(float, input().split()[1:])
+ary = [*map(float, input().split()[1:])]
 # 出力
 [print(f) for f in ary]

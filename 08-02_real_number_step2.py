@@ -5,6 +5,6 @@
 # 1 行目入力
 n = int(input())
 # 2 行目入力
-ary = map(float, input().split())
+ary = [*map(float, input().split())]
 # 出力
 [print(f) for f in ary]
