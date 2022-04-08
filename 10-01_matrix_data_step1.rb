@@ -25,7 +25,10 @@ h = 3
 # 入力
 ary = []
 h.times do
-  ary.push(gets.split.map(&:to_i))
+  # 1行分の要素を半角スペースで分割
+  row = gets.split.map(&:to_i)
+  # ary に追加
+  ary.push(row)
 end
 # 出力
 ary.each do |row|

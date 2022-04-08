@@ -3,6 +3,6 @@
 
 # 解答例
 # 入力
-ary = map(int, input().split())
+ary = [*map(int, input().split())]
 # 出力
 [print(num) for num in ary]

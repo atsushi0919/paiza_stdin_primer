@@ -28,7 +28,10 @@ n = gets.to_i
 # 続く n 行入力
 ary = []
 n.times do
+  # 1行分の要素を半角スペースで分割
+  # 1個目の要素を m , 2個目以降の要素を row に格納
   m, *row = gets.split.map(&:to_i)
+  # ary に追加
   ary.push(row)
 end
 # 出力
