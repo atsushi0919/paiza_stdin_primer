@@ -16,7 +16,7 @@ EOS
 # STEP3 と同じ
 # 解答例1
 # 入力
-_, ary = gets.split
+_, *ary = gets.split
 # 出力
 puts(ary)
 
